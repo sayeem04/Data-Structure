@@ -18,7 +18,7 @@ void bubbleSort(char name[], int size) {
 
 int binarySearch(char name[], int size, char target) {
     bubbleSort(name, size);
-    int start = 0, end = size - 2;
+    int start = 0, end = size - 1;
     while (start <= end) {
         int mid = (start + end) / 2;
         if (name[mid] == target) {
@@ -34,7 +34,7 @@ int binarySearch(char name[], int size, char target) {
 
 int main() {
     char name[] = "COMILLA"; // size kintu 5 hisheb korbe;
-    int size = sizeof(name) / sizeof(name[0]);
+    int size = strlen(name);
     char target = 'I';
     int ans = binarySearch(name, size, target);
     cout << " 'I' is found on " << ans << " th index" << endl;
