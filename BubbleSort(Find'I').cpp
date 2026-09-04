@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+// First Sort the word "COMILLA". Then Find 'I' from the Word using Binary Searching Algorithm. 
+
 
 void bubbleSort(char name[], int size) {
     for (int i = 0; i < size - 1; i++) {
@@ -33,7 +35,7 @@ int binarySearch(char name[], int size, char target) {
 }
 
 int main() {
-    char name[] = "COMILLA"; // size kintu 5 hisheb korbe;
+    char name[] = "COMILLA"; 
     int size = strlen(name);
     char target = 'I';
     int ans = binarySearch(name, size, target);
